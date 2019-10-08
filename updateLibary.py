@@ -7,7 +7,7 @@ import time
 driver = webdriver.Firefox()
 
 #open json from file
-with open("libary", "r") as f:
+with open("openingLibary", "r") as f:
     libary = json.load(f)
 
 #checks last id from libary to progress from there
