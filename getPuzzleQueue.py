@@ -10,8 +10,8 @@ from os import path
 with open(path.join(path.dirname(__file__), "openingLibary.json")) as f:
     libary = json.load(f)
 
-with open(path.join(path.dirname(__file__), "puzzleCache.json")) as c:
-    cache = json.load(c)
+# with open(path.join(path.dirname(__file__), "puzzleCache.json")) as c:
+#     cache = json.load(c)
 
 
 #get basic openings
@@ -20,18 +20,22 @@ def getOpening(opening, depth):
     # add inut validation and gives user an output on how to use the right args
     gameCache = []
     for key, elem in libary.items():
-        if key.find(opening) == 4:
+        if key.find(opening) == 4 and key.count(":") == depth:
             gameCache.append(elem)
+
+    # http://python.robasworld.com/python-relative-path/
+
+    print(gameCache)
 
         #
         #   Dump it right & find a better way than using an absolute path
         #
 
-    with open('F:\dev\python\chesspuzzle-opening-trainer\puzzleCache.json', 'w+') as file:
-        json.dump(gameCache, file, indent=4)
-        file.close()
-
-getOpening("Queen's", 0)
+#     with open('F:\dev\python\chesspuzzle-opening-trainer\puzzleCache.json', 'w+') as file:
+#         json.dump(gameCache, file, indent=4)
+#         file.close()
+#
+getOpening("Queen's", 2)
 
 
 

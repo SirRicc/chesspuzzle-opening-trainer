@@ -1,13 +1,14 @@
 from selenium import webdriver
 import json
 import time
+from os import path
 
 
 #start the emulated firefox
 driver = webdriver.Firefox()
 
 #open json from file
-with open("./openingLibary", "w+") as f:
+with open(path.join(path.dirname(__file__), "./openingLibary.json")) as f:
     libary = json.load(f)
 
 #checks last id from libary to progress from there
@@ -16,6 +17,7 @@ for key, elem in libary.items():
     startNum = len(elem) + startNum
 
 
+# TODO: write an exeption if emulated breaks due to beeing minimized to task bar
 for x in range(startNum, 100000):
     #build url
     url = "https://lichess.org/training/"
@@ -34,7 +36,7 @@ for x in range(startNum, 100000):
 
 
     #create a savegame
-    with open('libary', 'w+') as file:
+    with open('./libary', 'w+') as file:
         json.dump(libary, file, indent=4)
 
 
