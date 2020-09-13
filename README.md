@@ -3,8 +3,7 @@ This project solves my problem of not beeing able to play chesspuzzles on Liches
 
 
 # Requirements:
-You´ll need to have Selenium Web Driver installed since we´re fetching server-side rendered html
-which is not visible while using a "regular" webcrawler, aswell as for automated redirects.
+You need to have Selenium Web Driver installed.
 
 -> https://www.seleniumhq.org/
 
