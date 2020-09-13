@@ -1,5 +1,5 @@
 # Chesspuzzle-Opening-Trainer
-This project will solve my problem of not beeing able to play chesspuzzles on Lichess.org "sorted by opening".
+This project solves my problem of not beeing able to play chesspuzzles on Lichess.org "sorted by opening".
 
 
 # Requirements:
@@ -8,6 +8,3 @@ which is not visible while using a "regular" webcrawler, aswell as for automated
 
 -> https://www.seleniumhq.org/
 
-# ToDo:
-create event listener 
-automate redirects from libary
