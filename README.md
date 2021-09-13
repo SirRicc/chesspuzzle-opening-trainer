@@ -7,3 +7,6 @@ You need to have Selenium Web Driver installed.
 
 -> https://www.seleniumhq.org/
 
+
+# !Outdated since Lichess changed the way the api handles puzzles
+
