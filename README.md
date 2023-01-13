@@ -1,5 +1,5 @@
 # Chesspuzzle-Opening-Trainer
-This project solves my problem of not beeing able to play chesspuzzles on Lichess.org "sorted by opening".
+This Selenium project solves my problem of not beeing able to play chesspuzzles on Lichess.org "sorted by opening".
 
 
 # Requirements:
